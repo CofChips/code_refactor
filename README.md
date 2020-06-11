@@ -52,7 +52,7 @@ Additional clarity was addressed through and adjustment made to the title.
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://cofchips.github.io/code_refractor/)
 
 
 ## Authors
