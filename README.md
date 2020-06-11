@@ -1,8 +1,8 @@
 # Code Refactor: Horiseon Social Solution Services
 
 The objective of this exercise was to take existing code and to refactor it to meet the below client objectives:
-- codebase follows accessibility standards
-- site is optimized for search engines
+* codebase follows accessibility standards
+* site is optimized for search engines
 
 The client also provided a list of criteria for acceptance of the refactored codebase:
 
