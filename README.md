@@ -45,6 +45,53 @@ From a clarity perspective, where possible, non-semantic html (e.g."div") was re
 ```
 Additional clarity was addressed through and adjustment made to the title.
 
+From an accessibility perspective, alt text was added for each image. Additionally, the most difficult aspect in terms of accessibility was the usage of a background image as the main image for the site. As background images do not permit for alt text to be entered, they are effectively invisible to impaired visitors.  To address this issue, the image was moved into the html file while utilizing the following code to address image cropping:
+
+HTML:
+```
+    <!-- introduced "div" to encompass header and image -->
+    <div class="wrapper">
+        <!-- changed from "div" to "header" -->
+        <header class="header">
+            <h1>Hori<span class="seo">seo</span>n</h1>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    </li>
+                    <li>
+                        <a href="#online-reputation-management">Online Reputation Management</a>
+                    </li>
+                    <li>
+                        <a href="#social-media-marketing">Social Media Marketing</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- introduced image to replace background image and add "alt" for accessibility -->
+        <img class="marketing" src="./Images/digital-marketing-meeting.jpg" alt="marketing meeting">
+    </div>
+```
+CSS:
+```
+/* replaced ".hero" to create a container for the image */
+.wrapper {
+    height: 910px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* replaced ".hero" to adjust image attributes */
+.marketing {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+```
+
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)

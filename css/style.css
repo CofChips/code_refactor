@@ -59,6 +59,7 @@ p {
     background-position: center;
 } */
 
+/* replaced ".hero" to create a container for the image */
 .wrapper {
     height: 910px;
     width: 100%;
@@ -67,6 +68,7 @@ p {
     margin-bottom: 25px;
 }
 
+/* replaced ".hero" to adjust image attributes */
 .marketing {
     width: 100%;
     z-index: -1;
